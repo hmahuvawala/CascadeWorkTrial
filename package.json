@@ -6,16 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "crawl": "tsx scripts/crawl.ts",
+    "postinstall": "npx playwright install chromium"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.105.0",
+    "better-sqlite3": "^12.11.1",
+    "cheerio": "^1.2.0",
     "next": "16.2.9",
+    "playwright": "^1.61.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
+    "tsx": "^4.22.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
